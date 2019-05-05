@@ -126,7 +126,7 @@ public class HomeActivity extends AppCompatActivity implements BottomNavigationV
 
     public void onClickFindMe(View view){
         Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
-                Uri.parse("http://maps.google.com/maps?saddr=-6.931106, 107.723244"));
+                Uri.parse("https://www.google.com/maps/@-6.924925,107.7209677,14.37z"));
         startActivity(intent);
     }
 
