@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.unikom.armannugraha.armannugrahaapps">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WalkThrough" />
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeFragment"
+            android:label="@string/title_activity_test"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.unikom.armannugraha.armannugrahaapps.HomeActivity" />
+        </activity>
+        <activity android:name=".ActivityFragment" />
+        <activity android:name=".GalleryFragment" />
+        <activity android:name=".FavoriteFragment" />
+        <activity
+            android:name=".ProfileFragment"
+            android:theme="@style/NoToolbar" />
+        <activity android:name=".GalleryActivity" />
+        <activity android:name=".MoveActivity"></activity>
+        <activity android:name=".GridGalleryAdapter"></activity>
+
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+
+        <meta-data android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzasdfasdf645asd4f847sad5f45asdf7845" />
+
+    </application>
+
+</manifest>

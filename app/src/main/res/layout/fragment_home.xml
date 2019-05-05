@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:prefix="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#F8F8F8"
+        android:weightSum="3">
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <com.github.abdularis.civ.CircleImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@mipmap/ic_photo_prof"
+                    app:strokeColor="@color/color_white"
+                    app:strokeWidth="4dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="@dimen/heightLineAct"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center"
+                    android:background="#78d9ff" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Nama saya Arnan Nugraha usia saya 20 tahun, saat ini saya mahasiswa semester 6 di UNIKOM, saya mengambil kelas karyawan."/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--View Makes-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Makanan Kesukaan"
+                android:layout_marginTop="16dp"
+                android:textSize="@dimen/titleText"
+                android:layout_marginStart="24dp"
+                android:textStyle="bold"
+                android:textColor="#4E4E4E"/>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:layout_marginTop="50dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_weight="1"
+                        prefix:cardCornerRadius="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="16dp"
+                            android:text="CardView1" />
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/heightImgHomeHr"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true"
+                            prefix:srcCompat="@drawable/nasgor" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_weight="1"
+                        prefix:cardCornerRadius="4dp"
+                        android:layout_marginLeft="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="16dp"
+                            android:text="CardView2" />
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/heightImgHomeHr"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            prefix:srcCompat="@drawable/cuankie" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_weight="1"
+                        prefix:cardCornerRadius="4dp"
+                        android:layout_marginLeft="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="16dp"
+                            android:text="CardView2" />
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/heightImgHomeHr"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            prefix:srcCompat="@drawable/sate" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_weight="1"
+                        prefix:cardCornerRadius="4dp"
+                        android:layout_marginLeft="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="16dp"
+                            android:text="CardView2" />
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/heightImgHomeHr"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            prefix:srcCompat="@drawable/seblak" />
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+
+        <!--View MIKES-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Minuman Kesukaan"
+                android:layout_marginTop="16dp"
+                android:textSize="@dimen/titleText"
+                android:layout_marginStart="24dp"
+                android:textStyle="bold"
+                android:textColor="#4E4E4E"/>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:layout_marginTop="50dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_weight="1"
+                        prefix:cardCornerRadius="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="16dp"
+                            android:text="CardView1" />
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/heightImgHomeHr"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true"
+                            prefix:srcCompat="@drawable/thai" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_weight="1"
+                        prefix:cardCornerRadius="4dp"
+                        android:layout_marginLeft="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="16dp"
+                            android:text="CardView2" />
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/heightImgHomeHr"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true"
+                            prefix:srcCompat="@drawable/milk" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_weight="1"
+                        prefix:cardCornerRadius="4dp"
+                        android:layout_marginLeft="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="16dp"
+                            android:text="CardView2" />
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/heightImgHomeHr"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true"
+                            prefix:srcCompat="@drawable/air" />
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Hobi"/>
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="@dimen/heightLineAct"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="32dp"
+                    android:background="#78d9ff" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Camping"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Interest"/>
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="@dimen/heightLineAct"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="32dp"
+                    android:background="#78d9ff" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Camping"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Cita cita"/>
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="@dimen/heightLineAct"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="32dp"
+                    android:background="#78d9ff" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Apa saja, menjadi orang yang dapat membantu sesama"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
